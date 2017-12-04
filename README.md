@@ -24,3 +24,6 @@ EasySeedbox is an unobtrusive seedbox installation script for Ubuntu and Debian 
 
 ## How to install
 	wget https://git.io/vDstU -O transmission-install.sh && sh transmission-install.sh
+	
+## OR
+wget https://raw.githubusercontent.com/xlf1234/EasySeedbox-transmission/master/install.sh -O transmission-install1.sh && sh transmission-install1.sh
