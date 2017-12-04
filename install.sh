@@ -261,12 +261,13 @@ cat > $SETTINGSFILE <<- EOM
 }
 EOM
 
-
 sed -i 's/uzr/'$username'/g' /etc/transmission-daemon/settings.json
 sed -i 's/pzw/'$pass'/g' /etc/transmission-daemon/settings.json
 echo "============================Restarting Transmission==========================="
 service transmission-daemon reload
 clear
+wget https://github.com/ronggang/transmission-web-control/raw/master/release/tr-control-easy-install.sh
+sh tr-control-easy-install.sh
 echo "=============================================================================="
 echo "                   Seedbox Installed successfully! "
 echo "=============================================================================="
